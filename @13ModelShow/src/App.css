@@ -1,0 +1,45 @@
+.header {
+  margin-top: 10%;
+  text-align: center;
+  position: flex;
+}.buttonStyle {
+  background-color: purple;
+  color: #ffff;
+}
+.modalBackdrop {
+  position: fixed;
+  background: rgba(0,0,0,0.4);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  left: 0;
+  right: 0;
+}
+.modalContent {
+  position: absolute;
+  background: #ffff;
+  color: #000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 16px;
+  border-radius: 10px;
+  min-width: 320px;
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.modelTitle {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.closeButton {
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+}
