@@ -13,11 +13,14 @@ function Login() {
     const [error, setError] = useState("")
 
     const login = async (data) => {
-        setError("")
+        console.log("@@@WWW")
+        setError("")    
         try {
             const session = await authService.login(data);
+            console.log("@@@",session)
             if (session) {
                 const userData = await authService.getCurrentUser();
+                console.log("#####",userData)
                 if (userData) dispatch(authLogin(userData));
                 navigate("/")
             }
